@@ -2,30 +2,37 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI index</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="../stylesmain.css"> -->
 </head>
 
-<body style="background-color: #212121; color: #fff">
+<body>
     <nav>
-        <a href="/" aria-current="page">Home</a>
-        <a target="_blank" href="https://www.youtube.com/@chaiaurcode">Youtube channel</a>
+        <a href="/CHAIaurjsproj/index.html" aria-current="page">Home</a>
     </nav>
-    <main>
-        <h1>Chai aur code</h1>
-        <div class="projects">
-            <a class="project-link" href="/chaiaurjsproj1/index.html">Project One - color Changer 🔥</a>
-            <a class="project-link" href="./2-BMICalculator/index.html">Project Two - BMI Generator ☕️</a>
-            <a class="project-link" href="./3-DigitalClock/index.html">Project Three - Digital clock 😎</a>
-            <a class="project-link" href="./4-GuessTheNumber/index.html">Project Four - Guess the number 🤨</a>
-            <a class="project-link" href="./5-keyboard/index.html">Project 5 - Keyboard check 👻</a>
-            <a class="project-link" href="./6-unlimitedColors/index.html">Project 6 - Unlimited Colors 🧠</a>
-        </div>
-    </main>
+    <div class="container">
+        <h1>BMI calculator</h1>
+        <form>
+            <p>
+                <lable>height in cm:</lable><input type="text" id="height">
+            </p>
+            <p>
+                <lable>weight in kg</lable><input type="text" id="weight">
+            </p>
+            <button>Calculate</button>
+            <div id="results"></div>
+            <div id="weight-guide">
+                <h3>BMI Weight Guide</h3>
+                <p>Under Weight = Less than 18.6</p>
+                <p>Normal Range = 18.6 and 24.9</p>
+                <p>Overweight = Greater than 24.9</p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
